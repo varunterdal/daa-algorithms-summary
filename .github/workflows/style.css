@@ -1,0 +1,199 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for a professional look */
+    color: white; /* White text for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #1a1a1a; /* Darker shade of black for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation bar styles */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav .button {
+    background-color: #FFCC00; /* Light yellow-orange button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .button:hover {
+    background-color: #FFA500; /* Slightly darker yellow-orange on hover */
+}
+
+/* Section styles */
+section {
+    background-color: #1f1f1f; /* Slightly lighter black-gray for sections */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* About section styling */
+#More Information {
+    background-color: #2a2a2a; /* A dark gray background for contrast */
+}
+
+/* City Map image styles */
+#city-map img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+/* Button styling within sections */
+button {
+    background-color: #FFCC00; /* Light yellow-orange color for buttons */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFA500; /* Slightly darker yellow-orange for hover effect */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-size: 1em;
+    color: #888; /* Light gray text for footer */
+    margin-top: 30px;
+}
+
+/* Styling for the team section */
+#team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#team button {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+}
+
+/* Section heading styles */
+h2 {
+    color: #FFCC00; /* Light yellow-orange headings */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Ordered list styling */
+ol {
+    padding-left: 20px;
+}
+
+/* Toggle visibility for sections */
+section[id^="vishal-reflections"], section[id^="course-intro"] {
+    display: none;
+}
+
+/* Additional styling for small text and details */
+small {
+    color: #999; /* Lighter gray for small text */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Light border for separation */
+}
+
+th {
+    background-color: #FFCC00; /* Light yellow-orange background for table headers */
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a; /* Dark gray background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #1f1f1f; /* Slightly lighter gray for odd rows */
+}
+
+tr:hover {
+    background-color: #444; /* Hover effect on rows to highlight them */
+}
+
+td {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+table th, table td {
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+}
+
+/* Responsive table styling */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px; /* Smaller font on mobile for better readability */
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
