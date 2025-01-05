@@ -23,109 +23,87 @@
     </nav>
 
     <section id="introduction">
-        <h2>Course Introduction</h2>
-        <p>The "Design and Analysis of Algorithms" course emphasizes understanding, designing, and evaluating algorithms to solve computational problems effectively. It delves into topics such as recursion, graph algorithms, sorting and searching, and advanced data structures like trees and heaps. Students gain skills in analyzing algorithm efficiency in terms of time and space complexity, applying these methods to real-world problems, and building a strong foundation for tackling advanced computing challenges.</p>
+        <button onclick="toggleContent('intro-content')">Course Introduction</button>
+        <div id="intro-content" class="content">
+            <p>The "Design and Analysis of Algorithms" course emphasizes understanding, designing, and evaluating algorithms to solve computational problems effectively. It delves into topics such as recursion, graph algorithms, sorting and searching, and advanced data structures like trees and heaps. Students gain skills in analyzing algorithm efficiency in terms of time and space complexity, applying these methods to real-world problems, and building a strong foundation for tackling advanced computing challenges.</p>
+        </div>
     </section>
 
     <section id="structures">
-        <h2>What Kind of Data Structures and Algorithms Have You Studied?</h2>
-        <h3>Data Structures</h3>
-        <ul>
-            <li><strong>Basic Structures:</strong> Arrays, Stacks, Queues, Linked Lists</li>
-            <li><strong>Intermediate Structures:</strong> Trees, Graphs, Heaps</li>
-            <li><strong>Advanced Structures:</strong> Tries, Fenwick Trees, Segment Trees, Skip Lists</li>
-        </ul>
-
-        <h3>Algorithms</h3>
-        <ul>
-            <li><strong>Sorting and Searching:</strong> Bubble Sort, Quick Sort, Merge Sort, Binary Search, KMP Algorithm</li>
-            <li><strong>Graph Algorithms:</strong> Dijkstra’s, Bellman-Ford, Prim’s, Kruskal’s</li>
-            <li><strong>Pathfinding:</strong> Floyd-Warshall</li>
-            <li><strong>Optimization Problems:</strong> Knapsack, Travelling Salesperson Problem, Huffman Coding</li>
-            <li><strong>Recursion and Backtracking:</strong> N-Queens Problem</li>
-            <li><strong>String Matching:</strong> Rabin-Karp, Boyer-Moore, Brute Force</li>
-            <li><strong>Divide and Conquer:</strong> Merge Sort, Strassen’s Matrix Multiplication</li>
-            <li><strong>Dynamic Programming:</strong> Fibonacci, Longest Common Subsequence</li>
-            <li><strong>Undecidability:</strong> Halting Problem</li>
-        </ul>
+        <button onclick="toggleContent('structures-content')">What Kind of Data Structures and Algorithms Have You Studied?</button>
+        <div id="structures-content" class="content">
+            <h3>Data Structures</h3>
+            <ul>
+                <li><strong>Basic Structures:</strong> Arrays, Stacks, Queues, Linked Lists</li>
+                <li><strong>Intermediate Structures:</strong> Trees, Graphs, Heaps</li>
+                <li><strong>Advanced Structures:</strong> Tries, Fenwick Trees, Segment Trees, Skip Lists</li>
+            </ul>
+            <h3>Algorithms</h3>
+            <ul>
+                <li><strong>Sorting and Searching:</strong> Bubble Sort, Quick Sort, Merge Sort, Binary Search, KMP Algorithm</li>
+                <li><strong>Graph Algorithms:</strong> Dijkstra’s, Bellman-Ford, Prim’s, Kruskal’s</li>
+                <li><strong>Pathfinding:</strong> Floyd-Warshall</li>
+                <li><strong>Optimization Problems:</strong> Knapsack, Travelling Salesperson Problem, Huffman Coding</li>
+                <li><strong>Recursion and Backtracking:</strong> N-Queens Problem</li>
+                <li><strong>String Matching:</strong> Rabin-Karp, Boyer-Moore, Brute Force</li>
+                <li><strong>Divide and Conquer:</strong> Merge Sort, Strassen’s Matrix Multiplication</li>
+                <li><strong>Dynamic Programming:</strong> Fibonacci, Longest Common Subsequence</li>
+                <li><strong>Undecidability:</strong> Halting Problem</li>
+            </ul>
+        </div>
     </section>
 
     <section id="applications">
-        <h2>How Do You Connect the Course with Real-Time Applications?</h2>
-        <ul>
-            <li><strong>Graph Algorithms:</strong> Employ Dijkstra's or Kruskal's algorithms to optimize routes in transportation networks or telecommunication systems.</li>
-            <li><strong>Sorting and Searching:</strong> Use efficient algorithms for inventory management and fast product searches in e-commerce platforms.</li>
-            <li><strong>Data Structures:</strong> Utilize heaps, trees, and hash tables for database indexing and real-time data retrieval systems like caching.</li>
-            <li><strong>Optimization Problems:</strong> Address real-world scenarios, such as resource allocation in project management, using the Knapsack problem.</li>
-        </ul>
+        <button onclick="toggleContent('applications-content')">How Do You Connect the Course with Real-Time Applications?</button>
+        <div id="applications-content" class="content">
+            <ul>
+                <li><strong>Graph Algorithms:</strong> Employ Dijkstra's or Kruskal's algorithms to optimize routes in transportation networks or telecommunication systems.</li>
+                <li><strong>Sorting and Searching:</strong> Use efficient algorithms for inventory management and fast product searches in e-commerce platforms.</li>
+                <li><strong>Data Structures:</strong> Utilize heaps, trees, and hash tables for database indexing and real-time data retrieval systems like caching.</li>
+                <li><strong>Optimization Problems:</strong> Address real-world scenarios, such as resource allocation in project management, using the Knapsack problem.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="project">
-        <h2>Course Project Introduction</h2>
-        <h3>Problem Space</h3>
-        <p>The project focuses on designing efficient algorithms for city planning and optimizing business processes. The problem space was identified through research and analyzing case studies from the white paper. The city design involves optimizing road networks, minimizing traffic, and improving public services through algorithmic approaches.</p>
-        <h3>Problem Definition and Team Details</h3>
-        <p>The problem definition is to create a set of algorithms that can optimize the city's transportation and business logistics. Each team member is working on different business cases such as traffic optimization, route planning, and resource allocation.</p>
-        <h3>Business Cases</h3>
-        <ul>
-            <li>Member 1: Traffic Flow Optimization</li>
-            <li>Member 2: Route Planning for Emergency Services</li>
-            <li>Member 3: Resource Allocation for Businesses</li>
-        </ul>
+        <button onclick="toggleContent('project-content')">Course Project Introduction</button>
+        <div id="project-content" class="content">
+            <h3>Problem Space</h3>
+            <p>The project focuses on designing efficient algorithms for city planning and optimizing business processes. The problem space was identified through research and analyzing case studies from the white paper. The city design involves optimizing road networks, minimizing traffic, and improving public services through algorithmic approaches.</p>
+            <h3>Problem Definition and Team Details</h3>
+            <p>The problem definition is to create a set of algorithms that can optimize the city's transportation and business logistics. Each team member is working on different business cases such as traffic optimization, route planning, and resource allocation.</p>
+            <h3>Business Cases</h3>
+            <ul>
+                <li>Member 1: Traffic Flow Optimization</li>
+                <li>Member 2: Route Planning for Emergency Services</li>
+                <li>Member 3: Resource Allocation for Businesses</li>
+            </ul>
+        </div>
     </section>
 
     <section id="reflections">
-        <h2>Course Learning Reflections</h2>
-        <article>
-            <h3>Types of Problems in Nature</h3>
-            <p>Problems in nature can be categorized into iteration, recursion, and backtracking. For example, sorting a list involves iterative techniques, whereas finding paths in a maze uses backtracking.</p>
-        </article>
-
-        <article>
-            <h3>Space and Time Efficiency</h3>
-            <p>Space and time efficiency are critical in algorithm design. They ensure that solutions are optimal and scalable. Orders of growth such as O(1), O(log n), O(n), O(n log n), and O(n^2) help categorize algorithms based on their efficiency.</p>
-        </article>
-
-        <article>
-            <h3>Design Principles</h3>
-            <p>Design principles such as modularity, abstraction, and reusability help in creating scalable and maintainable algorithms. These principles ensure that the solutions are adaptable to changing requirements and are easier to debug and optimize.</p>
-        </article>
-
-        <article>
-            <h3>Comparative Analysis of Tree Data Structures</h3>
-            <p>Different tree structures optimize various scenarios. For instance, Binary Search Trees (BST) are suitable for quick search operations, AVL Trees maintain balance to ensure consistent performance, and Red-Black Trees offer efficient insertion and deletion operations. 2-3 Trees and Heaps are also important for specific use cases like priority queues and file systems.</p>
-        </article>
-
-        <article>
-            <h3>Array Query Algorithms</h3>
-            <p>Fenwick Trees and Segment Trees are used for efficient query operations on arrays. These structures allow for quick updates and range queries, which are essential in applications like competitive programming and database systems.</p>
-        </article>
-
-        <article>
-            <h3>Graph Traversals</h3>
-            <p>Depth-First Search (DFS) and Breadth-First Search (BFS) are fundamental graph traversal techniques. DFS is used in scenarios like topological sorting and detecting cycles, while BFS is suitable for finding the shortest path in unweighted graphs.</p>
-        </article>
-
-        <article>
-            <h3>Sorting Techniques</h3>
-            <p>Sorting algorithms such as Quick Sort, Merge Sort, and Bubble Sort have various real-world applications. Quick Sort is preferred for its efficiency in most cases, while Merge Sort is used in situations where stability is required. Bubble Sort, though less efficient, is often used in educational contexts to teach sorting concepts.</p>
-        </article>
-
-        <article>
-            <h3>Graph Algorithms</h3>
-            <p>Graph algorithms, including spanning trees and shortest path algorithms, are vital in network design, such as creating efficient transportation routes and optimizing data flows in computer networks. Spanning trees are used to design minimum-cost network connections, while shortest path algorithms help in navigation and logistics.</p>
-        </article>
-
-        <article>
-            <h3>Reflections on Algorithm Design</h3>
-            <p>To determine the most efficient approach when solving a complex problem, it is essential to analyze the problem space, identify constraints, and evaluate different algorithmic strategies. Balancing conflicting constraints requires trade-offs between time, space, and complexity.</p>
-            <p>Effective solutions are evaluated based on their correctness, efficiency, and scalability. Adapting existing solutions to new challenges often involves tweaking parameters, modifying data structures, or combining multiple algorithms.</p>
-            <p>When dealing with complex datasets, recognizing patterns and structures can simplify the problem-solving process. It is important to prioritize simplicity over optimization in cases where maintainability and readability are critical.</p>
-        </article>
+        <button onclick="toggleContent('reflections-content')">Course Learning Reflections</button>
+        <div id="reflections-content" class="content">
+            <article>
+                <h3>Types of Problems in Nature</h3>
+                <p>Problems in nature can be categorized into iteration, recursion, and backtracking. For example, sorting a list involves iterative techniques, whereas finding paths in a maze uses backtracking.</p>
+            </article>
+            <article>
+                <h3>Space and Time Efficiency</h3>
+                <p>Space and time efficiency are critical in algorithm design. They ensure that solutions are optimal and scalable. Orders of growth such as O(1), O(log n), O(n), O(n log n), and O(n^2) help categorize algorithms based on their efficiency.</p>
+            </article>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Design and Analysis of Algorithms - Learning Portfolio</p>
     </footer>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
