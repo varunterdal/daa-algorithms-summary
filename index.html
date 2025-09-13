@@ -2,231 +2,199 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design and Analysis of Algorithms - Learning Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Analysis of Algorithms - Learning Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Design and Analysis of Algorithms</h1>
-    <h2>Learning Portfolio</h2>
-  </header>
+    <header>
+        <h1>Design and Analysis of Algorithms</h1>
+        <h2>Learning Portfolio</h2>
+    </header>
 
-  <!-- Student Information -->
-  <section>
-    <h3>Student Information</h3>
-    <ul>
-      <li><strong>Name:</strong> Varun S Terdal</li>
-      <li><strong>SRN:</strong> 01FE23BCI068</li>
-      <li><strong>Course Name:</strong> Design And Analysis Of Algorithms</li>
-      <li><strong>University:</strong> KLE Technological University</li>
-      <li><strong>Portfolio Topic/Domain:</strong> DAA Course Project</li>
-    </ul>
-  </section>
+    <!-- Student Information -->
+    <section>
+        <h3>Student Information</h3>
+        <ul>
+            <li><strong>Name:</strong> Varun S Terdal</li>
+            <li><strong>SRN:</strong> 01FE23BCI068</li>
+            <li><strong>Course Name:</strong> Design And Analysis Of Algorithms</li>
+            <li><strong>University:</strong> KLE Technological University</li>
+            <li><strong>Portfolio Topic/Domain:</strong> DAA Course Project</li>
+        </ul>
+    </section>
 
-  <!-- Course Introduction -->
-  <section>
-    <button onclick="toggleContent('intro-content')">Course Introduction</button>
-    <div id="intro-content" class="content">
-      <p>
-        The "Design and Analysis of Algorithms" course develops the ability to create algorithms that solve computational
-        problems efficiently. It introduces fundamental principles and rigorous analysis of algorithm performance.
-        Key areas include asymptotic analysis, recurrence relations, algorithm design paradigms, and complexity theory.
-        Paradigms such as <strong>Divide-and-Conquer, Greedy, Dynamic Programming, Backtracking, and Graph Algorithms</strong>
-        are central to this course. Students also study <strong>computational limits</strong> like NP-completeness and undecidability.
-      </p>
-    </div>
-  </section>
-
-  <!-- Data Structures & Algorithms -->
-  <section>
-    <button onclick="toggleContent('structures-content')">What Kind of Data Structures and Algorithms Have You Studied?</button>
-    <div id="structures-content" class="content">
-
-      <h3>Data Structures</h3>
-      <ul>
-        <li><strong>Basic Structures:</strong>
-          <p>
-            <em>Arrays:</em> Static structure allowing O(1) random access.<br>
-            <em>Stacks:</em> LIFO order, operations push/pop in O(1). Applications: recursion, parsing.<br>
-            <em>Queues:</em> FIFO order, enqueue/dequeue in O(1). Applications: scheduling, buffers.<br>
-            <em>Linked Lists:</em> Nodes connected via pointers. Insert/Delete O(1), but search O(n).
-          </p>
-        </li>
-
-        <li><strong>Intermediate Structures:</strong>
-          <p>
-            <em>Trees:</em> Hierarchical data. Binary Trees (O(h) search), Binary Search Trees, AVL Trees (balanced, O(log n)).<br>
-            <em>Heaps:</em> Complete binary tree for priority queues. Insert/Delete O(log n).<br>
-            <em>Graphs:</em> Representation using adjacency list/matrix. Traversals (BFS O(V+E), DFS O(V+E)).
-          </p>
-        </li>
-
-        <li><strong>Advanced Structures:</strong>
-          <p>
-            <em>Tries:</em> Efficient for prefix searching in strings, O(m) for word length m.<br>
-            <em>Fenwick Tree (Binary Indexed Tree):</em> Range queries & updates in O(log n).<br>
-            <em>Segment Tree:</em> Solves range queries with O(log n) complexity.<br>
-            <em>Skip Lists:</em> Probabilistic structure, O(log n) search/insert/delete.
-          </p>
-        </li>
-      </ul>
-
-      <h3>Algorithms</h3>
-      <ul>
-        <li><strong>Sorting and Searching:</strong>
-          <ul>
-            <li>Bubble Sort: O(n²), simple but inefficient.</li>
-            <li>Selection & Insertion Sort: O(n²).</li>
-            <li>Merge Sort (Divide & Conquer): O(n log n), stable.</li>
-            <li>Quick Sort: Average O(n log n), Worst O(n²).</li>
-            <li>Heap Sort: O(n log n).</li>
-            <li>Binary Search: O(log n), requires sorted array.</li>
-          </ul>
-        </li>
-
-        <li><strong>Graph Algorithms:</strong>
-          <ul>
-            <li>Dijkstra’s Algorithm: Single-source shortest path, O((V+E) log V).</li>
-            <li>Bellman-Ford: Handles negative weights, O(VE).</li>
-            <li>Floyd-Warshall: All-pairs shortest paths, O(V³).</li>
-            <li>Prim’s & Kruskal’s: Minimum Spanning Tree algorithms.</li>
-          </ul>
-        </li>
-
-        <li><strong>Dynamic Programming:</strong>
-          <ul>
-            <li>Fibonacci Sequence: O(n) with memoization.</li>
-            <li>Longest Common Subsequence (LCS): O(mn).</li>
-            <li>0/1 Knapsack Problem: O(nW) using DP.</li>
-            <li>Matrix Chain Multiplication: O(n³).</li>
-          </ul>
-        </li>
-
-        <li><strong>Recursion & Backtracking:</strong>
-          <ul>
-            <li>N-Queens Problem: Exponential time, solved via backtracking.</li>
-            <li>Subset Sum / Maze Pathfinding: Recursive exploration.</li>
-          </ul>
-        </li>
-
-        <li><strong>String Matching:</strong>
-          <ul>
-            <li>Naïve Matching: O(mn).</li>
-            <li>Rabin-Karp: Uses rolling hash, expected O(m+n).</li>
-            <li>Boyer-Moore: Skips characters using heuristics, O(m/n) best case.</li>
-            <li>KMP: O(m+n), uses prefix table.</li>
-          </ul>
-        </li>
-
-        <li><strong>Divide and Conquer:</strong>
-          <ul>
-            <li>Merge Sort: O(n log n).</li>
-            <li>Strassen’s Matrix Multiplication: O(n^2.81).</li>
-          </ul>
-        </li>
-
-        <li><strong>Optimization Problems:</strong>
-          <ul>
-            <li>Knapsack Problem: Resource allocation.</li>
-            <li>Traveling Salesperson Problem (TSP): NP-hard, solved by approximation/heuristics.</li>
-            <li>Huffman Coding: Data compression using frequency trees.</li>
-          </ul>
-        </li>
-
-        <li><strong>Undecidability:</strong>
-          <p>
-            The <em>Halting Problem</em> proves that some problems cannot be solved by any algorithm.
-            Leads to study of <em>P vs NP, NP-Complete</em> problems.
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Applications -->
-  <section>
-    <button onclick="toggleContent('applications-content')">How Do You Connect the Course with Real-Time Applications?</button>
-    <div id="applications-content" class="content">
-      <ul>
-        <li><strong>Graph Algorithms:</strong>
-          <p>Used in GPS navigation, internet routing, social networks, airline scheduling.</p>
-        </li>
-        <li><strong>Sorting & Searching:</strong>
-          <p>Search engines, e-commerce (product sorting), databases, big data analytics.</p>
-        </li>
-        <li><strong>Data Structures:</strong>
-          <p>Trees for indexing, Heaps for scheduling, Hash Tables for fast lookups.</p>
-        </li>
-        <li><strong>Optimization:</strong>
-          <p>Knapsack in inventory management, TSP in logistics and delivery systems.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Project -->
-  <section>
-    <button onclick="toggleContent('project-content')">Course Project Introduction</button>
-    <div id="project-content" class="content">
-      <h3>Problem Space</h3>
-      <p>
-        The project addresses urban optimization challenges such as traffic flow, route planning,
-        and resource allocation in smart cities.
-      </p>
-      <h3>Problem Definition & Team Details</h3>
-      <p>
-        Algorithms were designed to optimize traffic lights, emergency routing, and resource
-        distribution. The team collaborated on real-world inspired subproblems.
-      </p>
-      <h3>Business Cases</h3>
-      <ul>
-        <li><strong>Member 1:</strong> Traffic flow optimization.</li>
-        <li><strong>Member 2:</strong> Emergency service route planning.</li>
-        <li><strong>Member 3:</strong> Business resource allocation.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Reflections -->
-  <section>
-    <button onclick="toggleContent('reflections-content')">Course Learning Reflections</button>
-    <div id="reflections-content" class="content">
-      <article>
-        <h3>Types of Problems in Nature</h3>
+    <!-- Course Introduction -->
+    <section>
+        <h3>Course Introduction</h3>
         <p>
-          Real-world problems like sorting, searching, and pathfinding can be modeled algorithmically.
-          Recursion and backtracking demonstrate power in problem-solving, while greedy and DP approaches
-          provide optimal solutions in structured domains.
+            The "Design and Analysis of Algorithms" (DAA) course develops the ability to create efficient algorithms to solve
+            computational problems. It focuses on understanding <strong>how algorithms work</strong>, how to measure their
+            efficiency, and how to design them for various problem types.
         </p>
-      </article>
-      <article>
-        <h3>Space and Time Efficiency</h3>
         <p>
-          Efficiency is critical: algorithms must balance <strong>time complexity</strong> (speed) and
-          <strong>space complexity</strong> (memory usage). Orders of growth (O(1), O(log n), O(n), O(n log n), O(n²))
-          classify algorithms. Example: Merge Sort O(n log n) vs Bubble Sort O(n²).
+            Key concepts include:
         </p>
-      </article>
-    </div>
-  </section>
+        <ul>
+            <li>Time complexity and space complexity (Big O, Big Θ, Big Ω)</li>
+            <li>Algorithm design paradigms: Divide-and-Conquer, Greedy, Dynamic Programming, Backtracking</li>
+            <li>Graph and network algorithms</li>
+            <li>Optimization problems (Knapsack, TSP)</li>
+            <li>Theoretical foundations like NP-completeness and undecidability</li>
+        </ul>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Design and Analysis of Algorithms - Learning Portfolio - Varun</p>
-  </footer>
+    <!-- Data Structures -->
+    <section>
+        <h3>Data Structures</h3>
 
-  <!-- Script -->
-  <script>
-    function toggleContent(id) {
-      const content = document.getElementById(id);
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
+        <h4>Basic Structures</h4>
+        <p>
+            <strong>Arrays:</strong> Fixed-size collections, fast access using indices. Example: storing student marks.
+        </p>
+        <p>
+            <strong>Stacks:</strong> LIFO structure, supports push/pop operations. Example: Undo operations in text editors.
+        </p>
+        <p>
+            <strong>Queues:</strong> FIFO structure, used in scheduling and buffering. Example: Print queue.
+        </p>
+        <p>
+            <strong>Linked Lists:</strong> Dynamic memory allocation, easy insertion/deletion. Types: singly, doubly, circular.
+        </p>
+
+        <h4>Intermediate Structures</h4>
+        <p>
+            <strong>Trees:</strong> Hierarchical structure, useful for searching and sorting. Example: Binary Search Tree (BST)
+        </p>
+        <p>
+            <strong>Graphs:</strong> Represent networks. Types: Directed, Undirected, Weighted, Unweighted.
+        </p>
+        <p>
+            <strong>Heaps:</strong> Complete binary tree for priority queues. Example: Min Heap for minimum extraction.
+        </p>
+
+        <h4>Advanced Structures</h4>
+        <p>
+            <strong>Tries:</strong> Efficient string storage for prefix search. Example: Auto-complete in search engines.
+        </p>
+        <p>
+            <strong>Fenwick Trees / BIT:</strong> Range queries in O(log n) time.
+        </p>
+        <p>
+            <strong>Segment Trees:</strong> Range queries and updates, useful for interval problems.
+        </p>
+        <p>
+            <strong>Skip Lists:</strong> Probabilistic data structure for fast insertion/search in sorted lists.
+        </p>
+    </section>
+
+    <!-- Algorithms -->
+    <section>
+        <h3>Algorithms</h3>
+
+        <h4>Sorting & Searching</h4>
+        <p>
+            <strong>Bubble Sort:</strong> Repeatedly swap adjacent elements. Complexity: O(n²)
+        </p>
+        <p><strong>Pseudocode:</strong></p>
+        <pre>
+for i = 0 to n-1:
+    for j = 0 to n-i-1:
+        if arr[j] > arr[j+1]:
+            swap(arr[j], arr[j+1])
+        </pre>
+        <p>
+            <strong>Merge Sort:</strong> Divide-and-conquer algorithm, complexity: O(n log n)
+        </p>
+        <pre>
+function mergeSort(arr):
+    if length(arr) <= 1:
+        return arr
+    mid = length(arr)/2
+    left = mergeSort(arr[0:mid])
+    right = mergeSort(arr[mid:])
+    return merge(left, right)
+        </pre>
+
+        <h4>Graph Algorithms</h4>
+        <ul>
+            <li>Dijkstra's algorithm: Shortest path in weighted graph (no negative weights)</li>
+            <li>Bellman-Ford algorithm: Shortest path (supports negative weights)</li>
+            <li>Prim & Kruskal: Minimum Spanning Tree (MST)</li>
+            <li>Floyd-Warshall: All pairs shortest path</li>
+        </ul>
+
+        <h4>Dynamic Programming</h4>
+        <p>
+            Solve complex problems by breaking into smaller overlapping subproblems and storing results.
+            Example: Fibonacci, Longest Common Subsequence, 0/1 Knapsack.
+        </p>
+
+        <h4>Recursion & Backtracking</h4>
+        <p>
+            Solve problems incrementally and backtrack if constraints fail. Example: N-Queens, Sudoku solver.
+        </p>
+
+        <h4>String Matching</h4>
+        <p>
+            Naive, KMP, Rabin-Karp, Boyer-Moore algorithms for pattern search in strings. Important in search engines.
+        </p>
+
+        <h4>Optimization Problems</h4>
+        <p>
+            Knapsack, Traveling Salesperson Problem (TSP), Huffman Coding. Applied in resource allocation, logistics, and compression.
+        </p>
+
+        <h4>Undecidability & Complexity</h4>
+        <p>
+            Halting Problem, P vs NP, NP-Complete problems. Understand the limits of computation.
+        </p>
+    </section>
+
+    <!-- Applications -->
+    <section>
+        <h3>Real-Time Applications</h3>
+        <ul>
+            <li>Graph algorithms: GPS routing, network design, social networks</li>
+            <li>Sorting & Searching: Databases, e-commerce search, analytics</li>
+            <li>Dynamic Programming: Resource optimization, scheduling tasks</li>
+            <li>Data Structures: Memory management, database indexing, cache systems</li>
+        </ul>
+    </section>
+
+    <!-- Project -->
+    <section>
+        <h3>Course Project</h3>
+        <p>
+            The project focuses on optimizing traffic flow, route planning, and resource allocation in smart cities.
+        </p>
+        <h4>Problem Definition & Team Details</h4>
+        <ul>
+            <li>Optimizing traffic lights, emergency routing, and resource allocation.</li>
+            <li>Team Members collaborated on subproblems like traffic flow, emergency services, and business logistics.</li>
+        </ul>
+    </section>
+
+    <!-- Reflections -->
+    <section>
+        <h3>Course Learning Reflections</h3>
+        <p>
+            Sorting, searching, and pathfinding are fundamental problem types. Recursion, backtracking, greedy, and dynamic
+            programming offer powerful methods to solve them efficiently.
+        </p>
+        <p>
+            Understanding <strong>time complexity</strong> (speed) and <strong>space complexity</strong> (memory usage) is
+            essential. Orders of growth (O(1), O(log n), O(n), O(n log n), O(n²)) help classify algorithms and choose
+            the best approach.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Design and Analysis of Algorithms - Learning Portfolio - Varun</p>
+    </footer>
 
 </body>
-
 </html>
