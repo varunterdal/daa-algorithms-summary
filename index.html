@@ -11,135 +11,140 @@
 </head>
 <body>
 
-    <div class="portfolio-container">
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
 
+    <div class="portfolio-container">
         <header>
             <h1>Design and Analysis of Algorithms</h1>
             <h2>Learning Portfolio</h2>
         </header>
 
         <main>
-            <section class="info-card">
+            <section class="info-card reveal">
                 <h3>Student Information</h3>
                 <ul>
                     <li><strong>Name:</strong> Varun S Terdal</li>
+                    <li><strong>Roll.no:</strong> 131</li>
                     <li><strong>SRN:</strong> 01FE23BCI068</li>
                     <li><strong>Course Name:</strong> Design And Analysis Of Algorithms</li>
+                    <li><strong>Course Code:</strong> 24ECAC203</li>
                     <li><strong>Course Instructor:</strong> K.M.M.Rajashekharaiah</li>
                     <li><strong>University:</strong> KLE Technological University</li>
                     <li><strong>Portfolio Topic/Domain:</strong> DAA Course Project</li>
                 </ul>
             </section>
 
-            <section class="accordion-section">
-                <button class="accordion">
+            <section class="accordion-section reveal">
+                <button class="accordion" aria-expanded="false" aria-controls="panel-1">
                     <span class="accordion-title">Course Introduction</span>
                     <div class="accordion-icon"></div>
                 </button>
-                <div class="panel">
+                <div id="panel-1" class="panel">
                     <div class="panel-content">
-                        <p>The "Design and Analysis of Algorithms" course focuses on developing the ability to create algorithms that can efficiently solve a wide range of computational problems. It introduces fundamental principles and techniques that enable students to analyze and optimize the performance of algorithms. Key areas include the analysis of time and space complexity using notations like Big O, Big Omega, and Big Theta, designing efficient algorithms, and understanding the theoretical foundations of computing. This course also covers important algorithmic paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and graph algorithms, preparing students to solve real-world computational challenges.</p>
+                        <p>The "Design and Analysis of Algorithms" course focuses on developing the ability to create algorithms that can efficiently solve a wide range of computational problems...</p>
                     </div>
                 </div>
             </section>
             
-            <section class="accordion-section">
-                <button class="accordion">
-                    <span class="accordion-title">Data Structures and Algorithms Studied</span>
+            <section class="accordion-section reveal">
+                <button class="accordion" aria-expanded="false" aria-controls="panel-2">
+                    <span class="accordion-title">What Kind of Data Structures and Algorithms Have You Studied?</span>
                     <div class="accordion-icon"></div>
                 </button>
-                <div class="panel">
+                <div id="panel-2" class="panel">
                     <div class="panel-content">
                         <div class="truncatable-content">
                             <h4>Data Structures</h4>
                             <ul>
-                                <li><strong>Basic Structures:</strong>
-                                    <p>Arrays, Stacks (LIFO), Queues (FIFO), and Linked Lists form the bedrock of data organization. While arrays offer constant-time access, linked lists provide dynamic sizing and efficient insertions/deletions. Stacks and Queues are crucial for managing program execution flows, such as recursion (stacks) and breadth-first searches (queues).</p>
-                                </li>
-                                <li><strong>Intermediate Structures:</strong>
-                                    <p>Trees, Graphs, and Heaps model complex relationships. Trees represent hierarchical data, with Binary Search Trees enabling efficient searching ($O(\log n)$). Graphs model networks, from social connections to internet routing. Heaps are specialized trees, essential for implementing efficient Priority Queues used in many graph algorithms.</p>
-                                </li>
-                                <li><strong>Advanced Structures:</strong>
-                                    <p>Advanced structures solve specialized, high-performance tasks. Tries (Prefix Trees) are fundamental to autocomplete features in search engines. Fenwick Trees (Binary Indexed Trees) and Segment Trees provide powerful solutions for range query problems, enabling near-instantaneous calculations on data subsets.</p>
-                                </li>
+                                <li><strong>Basic Structures:</strong> <p>Arrays, Stacks, Queues, and Linked Lists form the foundation...</p></li>
+                                <li><strong>Intermediate Structures:</strong> <p>Trees, Graphs, and Heaps are important...</p></li>
+                                <li><strong>Advanced Structures:</strong> <p>Advanced structures like Tries, Fenwick Trees, and Segment Trees...</p></li>
                             </ul>
                             <h4>Algorithms</h4>
                             <ul>
-                                <li><strong>Sorting and Searching:</strong>
-                                    <p>Efficient sorting algorithms like Quick Sort and Merge Sort, with an average time complexity of $O(n \log n)$, are cornerstones of computer science. Binary Search provides a logarithmic time complexity for finding elements in sorted arrays, a massive improvement over linear scans.</p>
-                                </li>
-                                <li><strong>Graph Algorithms:</strong>
-                                    <p>Graph traversal algorithms like Breadth-First Search (BFS) and Depth-First Search (DFS) are fundamental. For finding the shortest paths, Dijkstra’s algorithm is used for non-negative edge weights, while Bellman-Ford can handle negative weights. Prim's and Kruskal's algorithms find the minimum spanning tree in a weighted graph, crucial for network design.</p>
-                                </li>
-                                <li><strong>Dynamic Programming:</strong>
-                                    <p>Dynamic Programming is a powerful technique for solving optimization problems by breaking them into simpler subproblems and storing their solutions (memoization). It's used to solve classic problems like the Longest Common Subsequence, 0/1 Knapsack, and finding optimal game strategies.</p>
-                                </li>
-                                 </ul>
+                                <li><strong>Sorting and Searching:</strong> <p>Various algorithms such as Bubble Sort, Quick Sort, and Merge Sort...</p></li>
+                                <li><strong>Graph Algorithms:</strong> <p>Graph algorithms like Dijkstra’s, Bellman-Ford, and Prim’s...</p></li>
+                                <li><strong>Pathfinding:</strong> <p>The Floyd-Warshall algorithm is used for finding shortest paths...</p></li>
+                                <li><strong>Optimization Problems:</strong> <p>Algorithms like the Knapsack and Traveling Salesperson Problem...</p></li>
+                                <li><strong>Recursion and Backtracking:</strong> <p>The N-Queens problem demonstrates the power of recursion...</p></li>
+                                <li><strong>String Matching:</strong> <p>Algorithms like Rabin-Karp, Boyer-Moore, and Brute Force...</p></li>
+                                <li><strong>Divide and Conquer:</strong> <p>Techniques like Merge Sort and Strassen’s Matrix Multiplication...</p></li>
+                                <li><strong>Dynamic Programming:</strong> <p>Dynamic Programming algorithms such as Fibonacci and Longest Common Subsequence...</p></li>
+                                <li><strong>Undecidability:</strong> <p>The Halting Problem explores the limits of what can be computed...</p></li>
+                            </ul>
                         </div>
                         <button class="read-more-btn">Read More</button>
                     </div>
                 </div>
             </section>
 
-            </main>
+            <section class="accordion-section reveal">
+                <button class="accordion" aria-expanded="false" aria-controls="panel-3">
+                    <span class="accordion-title">How Do You Connect the Course with Real-Time Applications?</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div id="panel-3" class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li><strong>Graph Algorithms:</strong> <p>Graph algorithms like Dijkstra's and Kruskal's are used extensively...</p></li>
+                            <li><strong>Sorting and Searching:</strong> <p>Efficient sorting and searching algorithms are used in databases...</p></li>
+                            <li><strong>Data Structures:</strong> <p>Advanced data structures like heaps, trees, and hash tables...</p></li>
+                            <li><strong>Optimization Problems:</strong> <p>Optimization problems are fundamental in resource allocation...</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="accordion-section reveal">
+                <button class="accordion" aria-expanded="false" aria-controls="panel-4">
+                    <span class="accordion-title">Course Project Introduction</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div id="panel-4" class="panel">
+                    <div class="panel-content">
+                        <h4>Problem Space</h4>
+                        <p>The project addresses the need for designing and optimizing urban infrastructure...</p>
+                        <h4>Problem Definition and Team Details</h4>
+                        <p>The problem is to develop algorithms that optimize traffic flow...</p>
+                        <h4>Business Cases</h4>
+                        <ul>
+                            <li><strong>Member 1:</strong> Focused on optimizing traffic flow...</li>
+                            <li><strong>Member 2:</strong> Worked on route planning for emergency services...</li>
+                            <li><strong>Member 3:</strong> Addressed resource allocation in businesses...</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="accordion-section reveal">
+                <button class="accordion" aria-expanded="false" aria-controls="panel-5">
+                    <span class="accordion-title">Course Learning Reflections</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div id="panel-5" class="panel">
+                    <div class="panel-content">
+                        <article>
+                            <h4>Types of Problems in Nature</h4>
+                            <p>Problems in nature such as sorting, searching, and pathfinding can be modeled...</p>
+                        </article>
+                        <article>
+                            <h4>Space and Time Efficiency</h4>
+                            <p>Efficient algorithms are critical in computer science, especially when dealing with large datasets...</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <p>&copy; 2025 Design and Analysis of Algorithms Portfolio | Varun S Terdal</p>
         </footer>
-
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const accordions = document.querySelectorAll('.accordion');
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
-            accordions.forEach(accordion => {
-                accordion.addEventListener('click', function () {
-                    const panel = this.nextElementSibling;
-                    const isActive = this.classList.contains('active');
-
-                    // Close all other accordions
-                    accordions.forEach(otherAccordion => {
-                        if (otherAccordion !== this) {
-                            otherAccordion.classList.remove('active');
-                            otherAccordion.nextElementSibling.classList.remove('is-open');
-                            otherAccordion.nextElementSibling.style.maxHeight = null;
-                        }
-                    });
-
-                    // Toggle the clicked accordion
-                    if (!isActive) {
-                        this.classList.add('active');
-                        panel.classList.add('is-open');
-                        panel.style.maxHeight = panel.scrollHeight + 'px';
-                    } else {
-                        this.classList.remove('active');
-                        panel.classList.remove('is-open');
-                        panel.style.maxHeight = null;
-                    }
-                });
-            });
-            
-            // BUG-FREE "Read More" Functionality
-            const readMoreBtn = document.querySelector('.read-more-btn');
-            const truncatableContent = document.querySelector('.truncatable-content');
-
-            if (readMoreBtn && truncatableContent) {
-                 readMoreBtn.addEventListener('click', function() {
-                    const parentPanel = this.closest('.panel');
-                    truncatableContent.classList.toggle('expanded');
-                    
-                    const isExpanded = truncatableContent.classList.contains('expanded');
-                    this.textContent = isExpanded ? 'Read Less' : 'Read More';
-                    
-                    // Crucially, recalculate the maxHeight of the open parent panel
-                    if (parentPanel.style.maxHeight) {
-                        parentPanel.style.maxHeight = parentPanel.scrollHeight + 'px';
-                    }
-                });
-            }
-        });
-    </script>
-
+    <script src="script.js" defer></script>
 </body>
 </html>
