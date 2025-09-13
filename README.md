@@ -3,7 +3,7 @@
 Welcome to my **Design and Analysis of Algorithms (DAA) Learning Portfolio**! 🚀  
 This is more than just a collection of notes—it’s my **hands-on journey** through algorithms, data structures, real-world applications, and problem-solving strategies learned at **KLE Technological University**.  
 
-Check it out live here: [https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/](https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/)
+Check it out live here: [[https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/](https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/)](https://varunterdal.github.io/daa-algorithms-summary/)
 
 ---
 
