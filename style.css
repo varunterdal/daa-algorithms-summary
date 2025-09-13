@@ -1,125 +1,229 @@
-/* ---
-    PREMIUM PORTFOLIO STYLESHEET (FINAL VERSION)
---- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Analysis of Algorithms - Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* --- 1. Global Setup & Variables --- */
-:root {
-    --bg-color: #121212;
-    --primary-color: #1E1E1E;
-    --border-color: #333333;
-    --accent-color: #00A8FF;
-    --font-color-primary: #EAEAEA;
-    --font-color-secondary: #A0A0A0;
-    --border-radius: 8px;
-    --transition-speed: 0.3s;
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--font-color-primary);
-    line-height: 1.8;
-    padding: 20px;
-}
+    <div class="portfolio-container">
 
-/* --- 2. Main Layout & Header --- */
-.portfolio-container { max-width: 900px; margin: 20px auto; padding: 10px; }
-header { text-align: center; padding: 20px; margin-bottom: 40px; }
-header h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 5px; }
-header h2 { font-size: clamp(1rem, 3vw, 1.2rem); font-weight: 300; color: var(--font-color-secondary); }
+        <header>
+            <h1>Design and Analysis of Algorithms</h1>
+            <h2>Learning Portfolio</h2>
+        </header>
 
-/* --- 3. Content Cards & Sections --- */
-.info-card, .accordion-section {
-    background-color: var(--primary-color);
-    border-radius: var(--border-radius);
-    margin-bottom: 20px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow);
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-}
-.info-card:hover, .accordion-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 168, 255, 0.1);
-}
-.info-card { padding: 30px; }
-.info-card h3 { margin-bottom: 20px; color: var(--accent-color); font-weight: 500; }
-.info-card ul { list-style: none; }
-.info-card li { padding: 5px 0; }
+        <main>
+            <section class="info-card">
+                <h3>Student Information</h3>
+                <ul>
+                    <li><strong>Name:</strong> Varun S Terdal</li>
+                    <li><strong>Roll.no:</strong> 131</li>
+                    <li><strong>SRN:</strong> 01FE23BCI068</li>
+                    <li><strong>Course Name:</strong> Design And Analysis Of Algorithms</li>
+                    <li><strong>Course Code:</strong> 24ECAC203</li>
+                    <li><strong>Course Instructor:</strong> K.M.M.Rajashekharaiah</li>
+                    <li><strong>University:</strong> KLE Technological University</li>
+                    <li><strong>Portfolio Topic/Domain:</strong> DAA Course Project</li>
+                </ul>
+            </section>
 
-/* --- 4. Accordion Styling --- */
-.accordion {
-    display: flex; justify-content: space-between; align-items: center;
-    width: 100%; background-color: transparent; border: none; color: var(--font-color-primary);
-    cursor: pointer; padding: 20px 30px; font-size: 1.2rem; font-weight: 500;
-    text-align: left; outline: none; transition: background-color var(--transition-speed) ease;
-}
-.accordion:hover { background-color: rgba(255, 255, 255, 0.03); }
-.accordion.active { background-color: rgba(0, 168, 255, 0.05); }
-.accordion-icon { position: relative; width: 16px; height: 16px; flex-shrink: 0; margin-left: 20px; }
-.accordion-icon::before, .accordion-icon::after {
-    content: ''; position: absolute; background-color: var(--accent-color);
-    transition: transform var(--transition-speed) cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.accordion-icon::before { width: 100%; height: 2px; top: 50%; transform: translateY(-50%); }
-.accordion-icon::after { width: 2px; height: 100%; left: 50%; transform: translateX(-50%); }
-.accordion.active .accordion-icon::after { transform: translateX(-50%) rotate(90deg); }
+            <section class="accordion-section">
+                <button class="accordion">
+                    <span class="accordion-title">Course Introduction</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <p>The "Design and Analysis of Algorithms" course focuses on developing the ability to create algorithms that can efficiently solve a wide range of computational problems. It introduces fundamental principles and techniques that enable students to analyze and optimize the performance of algorithms. Key areas include the analysis of time and space complexity, designing efficient algorithms, and understanding the theoretical foundations of computing. This course also covers important algorithmic paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and graph algorithms, preparing students to solve real-world computational challenges.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="accordion-section">
+                <button class="accordion">
+                    <span class="accordion-title">What Kind of Data Structures and Algorithms Have You Studied?</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <div class="truncatable-content">
+                            <h4>Data Structures</h4>
+                            <ul>
+                                <li><strong>Basic Structures:</strong>
+                                    <p>Arrays, Stacks, Queues, and Linked Lists form the foundation of many algorithms. Arrays allow fast access to elements by index, while Stacks and Queues are used in various practical scenarios such as recursive function calls and scheduling tasks. Linked Lists provide dynamic memory allocation, which helps with operations like insertion and deletion.</p>
+                                </li>
+                                <li><strong>Intermediate Structures:</strong>
+                                    <p>Trees, Graphs, and Heaps are important in the representation of hierarchical and interconnected data. Binary trees, AVL trees, and heaps are essential for efficient searching, sorting, and optimization. Graphs are crucial for solving problems like network flow and shortest paths.</p>
+                                </li>
+                                <li><strong>Advanced Structures:</strong>
+                                    <p>Advanced structures like Tries, Fenwick Trees, and Segment Trees are used to solve problems in string processing, range queries, and data compression. Skip Lists are used for fast search, insertion, and deletion in ordered sequences.</p>
+                                </li>
+                            </ul>
+                            <h4>Algorithms</h4>
+                            <ul>
+                                <li><strong>Sorting and Searching:</strong>
+                                    <p>Various algorithms such as Bubble Sort, Quick Sort, and Merge Sort are studied for sorting arrays and lists. Binary Search and KMP Algorithm are used to efficiently find elements and patterns in sorted data and strings, respectively.</p>
+                                </li>
+                                <li><strong>Graph Algorithms:</strong>
+                                    <p>Graph algorithms like Dijkstra’s, Bellman-Ford, and Prim’s allow the analysis of networks, including finding shortest paths, spanning trees, and optimal paths in weighted graphs.</p>
+                                </li>
+                                <li><strong>Pathfinding:</strong>
+                                    <p>The Floyd-Warshall algorithm is used for finding shortest paths in all-pairs situations in a weighted graph, providing a useful solution to problems in transportation and network design.</p>
+                                </li>
+                                <li><strong>Optimization Problems:</strong>
+                                    <p>Algorithms like the Knapsack and Traveling Salesperson Problem address real-world challenges in resource allocation and route optimization. Huffman Coding is a method for data compression based on frequency analysis of characters.</p>
+                                </li>
+                                <li><strong>Recursion and Backtracking:</strong>
+                                    <p>The N-Queens problem demonstrates the power of recursion and backtracking in solving problems where brute force is inefficient. These techniques are widely used in solving puzzles and optimization problems.</p>
+                                </li>
+                                <li><strong>String Matching:</strong>
+                                    <p>Algorithms like Rabin-Karp, Boyer-Moore, and Brute Force are explored for pattern matching in strings. These are foundational in text search engines and data mining.</p>
+                                </li>
+                                <li><strong>Divide and Conquer:</strong>
+                                    <p>Techniques like Merge Sort and Strassen’s Matrix Multiplication break complex problems into simpler subproblems. These approaches are widely used in computer graphics and large-scale numerical computations.</p>
+                                </li>
+                                <li><strong>Dynamic Programming:</strong>
+                                    <p>Dynamic Programming algorithms such as Fibonacci and Longest Common Subsequence focus on solving problems by breaking them into smaller subproblems and storing the results to avoid redundant calculations. These algorithms are crucial for optimization in fields such as bioinformatics and economics.</p>
+                                </li>
+                                <li><strong>Undecidability:</strong>
+                                    <p>The Halting Problem explores the limits of what can be computed. It is a key concept in theoretical computer science, showing that some problems are undecidable by any algorithm.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </section>
 
-.panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.panel-content { padding: 0 30px 20px 30px; border-top: 1px solid var(--border-color); }
-.panel-content h4 { color: var(--font-color-primary); font-weight: 500; margin-top: 20px; margin-bottom: 10px; }
-.panel-content ul { list-style: none; padding-left: 0; }
-.panel-content li { padding: 4px 0; margin-bottom: 1em; }
-.panel-content p { color: var(--font-color-secondary); margin-top: 0.5em; }
+            <section class="accordion-section">
+                <button class="accordion">
+                    <span class="accordion-title">How Do You Connect the Course with Real-Time Applications?</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li><strong>Graph Algorithms:</strong>
+                                <p>Graph algorithms like Dijkstra's and Kruskal's are used extensively in routing and network design. They help optimize communication networks, such as those used in telecommunications and internet data transmission, by minimizing costs or distances.</p>
+                            </li>
+                            <li><strong>Sorting and Searching:</strong>
+                                <p>Efficient sorting and searching algorithms are used in databases and e-commerce platforms. These algorithms allow fast lookups, inventory management, and customer transaction processing in real-time systems.</p>
+                            </li>
+                            <li><strong>Data Structures:</strong>
+                                <p>Advanced data structures like heaps, trees, and hash tables are used in database indexing, memory management systems, and caches. They enable quick retrieval, insertion, and deletion of data in large-scale applications such as real-time analytics and financial systems.</p>
+                            </li>
+                            <li><strong>Optimization Problems:</strong>
+                                <p>Optimization problems are fundamental in resource allocation, logistics, and project management. For example, the Knapsack problem is used in inventory management, where businesses need to optimize storage space and resources.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="accordion-section">
+                <button class="accordion">
+                    <span class="accordion-title">Course Project Introduction</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <h4>Problem Space</h4>
+                        <p>The project addresses the need for designing and optimizing urban infrastructure and business processes. The goal is to create algorithms that optimize city planning, transportation networks, and logistical operations. Through this, we aim to improve efficiency, reduce costs, and provide solutions for future smart cities.</p>
+                        <h4>Problem Definition and Team Details</h4>
+                        <p>The problem is to develop algorithms that optimize traffic flow, route planning, and resource allocation in the context of city planning. The team works on various aspects like optimizing traffic light systems, managing emergency routes, and efficiently distributing resources to reduce congestion and improve service delivery.</p>
+                        <h4>Business Cases</h4>
+                        <ul>
+                            <li><strong>Member 1:</strong> Focused on optimizing traffic flow by analyzing traffic patterns and designing algorithms to minimize congestion.</li>
+                            <li><strong>Member 2:</strong> Worked on route planning for emergency services, ensuring quick access to critical locations during emergencies.</li>
+                            <li><strong>Member 3:</strong> Addressed resource allocation in businesses, helping companies optimize inventory and reduce operational costs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="accordion-section">
+                <button class="accordion">
+                    <span class="accordion-title">Course Learning Reflections</span>
+                    <div class="accordion-icon"></div>
+                </button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <article>
+                            <h4>Types of Problems in Nature</h4>
+                            <p>Problems in nature such as sorting, searching, and pathfinding can be modeled using algorithms. Sorting algorithms use iteration, recursion is used in solving problems like the N-Queens problem, and backtracking can help with decision-making problems like finding paths in mazes.</p>
+                        </article>
+                        <article>
+                            <h4>Space and Time Efficiency</h4>
+                            <p>Efficient algorithms are critical in computer science, especially when dealing with large datasets or time-sensitive applications. Time complexity helps assess how quickly an algorithm can solve a problem, and space complexity ensures that the algorithm doesn't overconsume memory resources. Orders of growth such as O(n log n) for Merge Sort help understand algorithm efficiency.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-/* --- 5. NEW Staggered Animation for List Items --- */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateX(-10px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-.panel.is-open li {
-    animation: fadeIn 0.5s ease forwards;
-    opacity: 0;
-}
-/* Stagger the delay for each item */
-.panel.is-open li:nth-child(1) { animation-delay: 0.1s; }
-.panel.is-open li:nth-child(2) { animation-delay: 0.2s; }
-.panel.is-open li:nth-child(3) { animation-delay: 0.3s; }
-.panel.is-open li:nth-child(4) { animation-delay: 0.4s; }
-/* Add more if needed */
+        <footer>
+            <p>&copy; 2025 Design and Analysis of Algorithms Portfolio | Varun S Terdal</p>
+        </footer>
+    </div>
 
-/* --- 6. "Read More" Functionality --- */
-.truncatable-content {
-    max-height: 20em; /* Initial height before collapsing */
-    overflow: hidden;
-    position: relative;
-    transition: max-height var(--transition-speed) ease-in-out;
-}
-.truncatable-content:not(.expanded) {
-    max-height: 10em; /* Approx 5 lines of text */
-}
-.truncatable-content:not(.expanded)::after {
-    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-    height: 50px; background: linear-gradient(to top, var(--primary-color), transparent);
-    pointer-events: none;
-}
-.read-more-btn {
-    background: transparent; border: 1px solid var(--accent-color);
-    color: var(--accent-color); padding: 6px 14px; border-radius: 50px;
-    cursor: pointer; margin-top: 15px; font-weight: 500;
-    font-family: 'Poppins', sans-serif; transition: all var(--transition-speed) ease;
-}
-.read-more-btn:hover { background-color: var(--accent-color); color: var(--primary-color); }
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordions = document.querySelectorAll('.accordion');
 
-/* --- 7. Footer & Responsive --- */
-footer { text-align: center; padding: 30px 0; margin-top: 40px; color: var(--font-color-secondary); font-size: 0.9rem; }
-@media (max-width: 600px) {
-    body { padding: 10px; }
-    .portfolio-container { margin: 10px auto; }
-    .accordion { padding: 15px 20px; font-size: 1rem; }
-    .panel-content { padding: 0 20px 15px 20px; }
-}
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function () {
+                    const panel = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+
+                    // Close all other accordions
+                    accordions.forEach(otherAccordion => {
+                        if (otherAccordion !== this) {
+                            otherAccordion.classList.remove('active');
+                            otherAccordion.nextElementSibling.classList.remove('is-open');
+                            otherAccordion.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    if (!isActive) {
+                        this.classList.add('active');
+                        panel.classList.add('is-open');
+                        panel.style.maxHeight = panel.scrollHeight + 'px';
+                    } else {
+                        this.classList.remove('active');
+                        panel.classList.remove('is-open');
+                        panel.style.maxHeight = null;
+                    }
+                });
+            });
+            
+            // BUG-FREE "Read More" Functionality
+            const readMoreBtn = document.querySelector('.read-more-btn');
+            const truncatableContent = document.querySelector('.truncatable-content');
+
+            if (readMoreBtn && truncatableContent) {
+                 readMoreBtn.addEventListener('click', function() {
+                    const parentPanel = this.closest('.panel');
+                    truncatableContent.classList.toggle('expanded');
+                    
+                    const isExpanded = truncatableContent.classList.contains('expanded');
+                    this.textContent = isExpanded ? 'Read Less' : 'Read More';
+                    
+                    // Recalculate the maxHeight of the open parent panel to fix the bug
+                    if (parentPanel.style.maxHeight) {
+                        // We set it to scrollHeight to make sure it perfectly fits the new content
+                        parentPanel.style.maxHeight = parentPanel.scrollHeight + 'px';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
