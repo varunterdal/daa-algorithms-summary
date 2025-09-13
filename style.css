@@ -1,5 +1,5 @@
 /* ---
-    PREMIUM PORTFOLIO STYLESHEET
+    PREMIUM PORTFOLIO STYLESHEET (FINAL VERSION)
 --- */
 
 /* --- 1. Global Setup & Variables --- */
@@ -8,7 +8,6 @@
     --primary-color: #1E1E1E;
     --border-color: #333333;
     --accent-color: #00A8FF;
-    --accent-color-hover: #008fdb;
     --font-color-primary: #EAEAEA;
     --font-color-secondary: #A0A0A0;
     --border-radius: 8px;
@@ -90,12 +89,10 @@ header h2 {
 
 /* --- 5. Accordion Styling (Buttons & Panels) --- */
 .accordion {
-    /* Layout */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* Appearance */
     background-color: transparent;
     border: none;
     color: var(--font-color-primary);
@@ -105,7 +102,6 @@ header h2 {
     font-weight: 500;
     text-align: left;
     outline: none;
-    /* Transition */
     transition: background-color var(--transition-speed) ease;
 }
 
@@ -121,7 +117,7 @@ header h2 {
     position: relative;
     width: 16px;
     height: 16px;
-    flex-shrink: 0; /* Prevents icon from shrinking */
+    flex-shrink: 0;
     margin-left: 20px;
 }
 
@@ -132,22 +128,19 @@ header h2 {
     background-color: var(--accent-color);
     transition: transform var(--transition-speed) cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-/* Horizontal bar */
-.accordion-icon::before {
+.accordion-icon::before { /* Horizontal bar */
     width: 100%;
     height: 2px;
     top: 50%;
     transform: translateY(-50%);
 }
-/* Vertical bar */
-.accordion-icon::after {
+.accordion-icon::after { /* Vertical bar */
     width: 2px;
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
-/* Active state: turns '+' into '-' */
-.accordion.active .accordion-icon::after {
+.accordion.active .accordion-icon::after { /* Active state: turns '+' into '-' */
     transform: translateX(-50%) rotate(90deg);
 }
 
@@ -161,66 +154,27 @@ header h2 {
     padding: 0px 30px 20px 30px;
     border-top: 1px solid var(--border-color);
 }
-.panel-content h4 {
-    color: var(--font-color-secondary);
+.panel-content h4, .panel-content article h4 {
+    color: var(--font-color-primary); /* Made headings pop more */
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 .panel-content ul {
     list-style: none;
-    padding-left: 10px;
+    padding-left: 0;
 }
 .panel-content li {
     padding: 4px 0;
+    margin-bottom: 1em;
+}
+.panel-content p {
+    color: var(--font-color-secondary);
+    padding-left: 0;
+    margin-top: 0.5em; /* Add space between list title and paragraph */
 }
 
-/* --- 6. "Read More" Functionality --- */
-.truncatable-content {
-    max-height: 5.5em; /* Approx 3 lines of text */
-    overflow: hidden;
-    position: relative;
-    transition: max-height var(--transition-speed) ease-in-out;
-}
-
-.truncatable-content::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: linear-gradient(to top, var(--primary-color), transparent);
-    pointer-events: none;
-    transition: opacity var(--transition-speed) ease;
-}
-
-.truncatable-content.expanded {
-    max-height: 1000px; /* Large value to reveal all content */
-}
-.truncatable-content.expanded::after {
-    opacity: 0;
-}
-
-.read-more-btn {
-    background: transparent;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    padding: 6px 14px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
-}
-
-.read-more-btn:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-}
-
-/* --- 7. Footer --- */
+/* --- 6. Footer --- */
 footer {
     text-align: center;
     padding: 30px 0;
@@ -229,7 +183,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- 8. Responsive Design --- */
+/* --- 7. Responsive Design --- */
 @media (max-width: 600px) {
     body {
         padding: 10px;
