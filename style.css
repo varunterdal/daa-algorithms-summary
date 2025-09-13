@@ -86,25 +86,7 @@ footer { text-align: center; padding: 30px 0; margin-top: 40px; color: var(--fon
     transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .panel-content { padding: 0 30px 20px 30px; border-top: 1px solid var(--border-color); }
-.panel-content h4 { color: var(--font-color-primary); font-weight: 500; margin-top: 20px; margin-bottom: 10px; }
+.panel-content h4, .panel-content article h4 { color: var(--font-color-primary); font-weight: 500; margin-top: 20px; margin-bottom: 10px; }
 .panel-content ul { list-style: none; padding-left: 0; }
 .panel-content li { padding: 4px 0; margin-bottom: 1em; }
 .panel-content p { color: var(--font-color-secondary); margin-top: 0.5em; }
-
-/* --- 5. "Read More" --- */
-.truncatable-content {
-    --collapsed-height: 25em; max-height: var(--collapsed-height);
-    overflow: hidden; position: relative; transition: max-height 0.6s ease-in-out;
-}
-.truncatable-content:not(.expanded)::after {
-    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-    height: 60px; background: linear-gradient(to top, var(--primary-color) 20%, transparent);
-}
-.truncatable-content.expanded { max-height: 10000px; }
-.read-more-btn {
-    background: transparent; border: 1px solid var(--accent-color);
-    color: var(--accent-color); padding: 6px 14px; border-radius: 50px;
-    cursor: pointer; margin-top: 15px; font-weight: 500;
-    font-family: 'Poppins', sans-serif; transition: all var(--transition-speed) ease;
-}
-.read-more-btn:hover, .read-more-btn:focus-visible { background-color: var(--accent-color); color: var(--bg-color); }
