@@ -1,64 +1,37 @@
-# 🏙️ Smart City with Algorithms 🚦🤖  
+# 🎓 Design and Analysis of Algorithms - Learning Portfolio
 
-Hey there! 👋 Welcome to my **Smart City project**, built as part of my **Design and Analysis of Algorithms (DAA)** course.  
+Welcome to my **Design and Analysis of Algorithms (DAA) Learning Portfolio**! 🚀  
+This is more than just a collection of notes—it’s my **hands-on journey** through algorithms, data structures, real-world applications, and problem-solving strategies learned at **KLE Technological University**.  
 
-This repo is not just code – it’s my **learning journey + creativity + fun** all rolled into one 🎉  
-
----
-
-## ✨ The Story Behind It  
-When I started DAA, I thought it was all about **boring math & big O notations** 🙈.  
-But then… 💡 I realized algorithms are literally **everywhere** – from traffic signals 🚦 to online shopping carts 🛒.  
-
-So, I decided to **design a Smart City using algorithms** – making the theory come alive in a real-world setting.  
-And guess what? It was actually **fun** 🕺🔥  
+Check it out live here: [https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/](https://varunterdal.github.io/design-and-analysis-of-algorithms-summary/)
 
 ---
 
-## 🛠️ How I Built This  
-1. **HTML** → built the structure like the skeleton of the city 🏗️  
-2. **CSS** → added styles (because a city without lights looks dull 💡🌃)  
-3. **JavaScript** → gave it life, toggling sections like traffic lights switching green/red 🚦  
-4. **DAA Concepts** → this was the secret sauce 🍝 – I applied algorithms for:  
-   - Shortest paths (Dijkstra’s) → 🚑 Ambulances finding fastest routes  
-   - Optimization (Knapsack) → 📦 Managing limited resources  
-   - Graphs → 🛣️ Road networks and city planning  
-   - Divide & Conquer → 📊 Breaking problems into manageable pieces  
+## ✨ Why This Portfolio is Special
+
+This isn’t your average boring report. I built this portfolio to **showcase learning in style**:
+
+- **Glassmorphism Magic**: Sleek frosted-glass sections make the UI look like something from the future. 🪟  
+- **Dynamic Animated Header**: A gradient animation keeps things alive and vibrant. 🌈  
+- **Interactive Accordion Sections**: Expand and collapse content smoothly—because scrolling forever is overrated. 🎢  
+- **Fully Responsive Design**: Looks perfect on any device, whether it’s your laptop or your phone. 📱💻  
+- **DAA Content Galore**: From Arrays to Trees, Sorting to Dynamic Programming, and even a real-world course project.  
 
 ---
 
-## 🚀 Why It Was Fun  
-- I wasn’t just writing dry theory – I was **building my own city** (a mini SimCity but with algorithms 😍)  
-- Watching algorithms solve real-world problems felt like **magic ✨**  
-- The portfolio website turned into my **digital playground** where I could show my work proudly 🖥️🎨  
-- And… deploying it on **GitHub Pages** meant anyone can visit my city 🌍  
+## 🛠️ Tech Stack I Used
 
-👉 [Take a Tour of My Smart City 🏙️](https://varunterdal.github.io/smart-city-daa-portfolio/)  
+I built this entire portfolio **from scratch** using:
 
----
-
-## 📚 What You’ll Find Here  
-- 🎓 **Course Learnings Recap** → My notes on DAA concepts  
-- 🧩 **Algorithms in Action** → Sorting, searching, graphs, DP, backtracking  
-- 🌍 **Smart City Project** → Problem definition, solution design & business cases  
-- 🤯 **Reflections** → What I learned about efficiency, complexity & fun in problem-solving  
+- **HTML5**: For semantic, structured content.  
+- **CSS3**:
+  - Custom properties for easy theme adjustments.  
+  - Flexbox to organize the layout like a pro.  
+  - Keyframe animations to bring the page alive.  
+  - `backdrop-filter` for that frosted-glass, futuristic look.  
+- **Vanilla JavaScript**: Powered the accordion sections and added interactivity without relying on heavy frameworks. ⚡  
 
 ---
 
-## 👨‍🎓 About Me  
-- **Name:** Varun S Terdal  
-- **Roll No.:** 131  
-- **SRN:** 01FE23BCI068  
-- **Course:** Design and Analysis of Algorithms (24ECAC203)  
-- **University:** KLE Technological University  
+## 📂 Project Structure
 
----
-
-## ⚡ How to Explore My City  
-1. Visit the live site 👉 [Smart City Portfolio](https://varunterdal.github.io/smart-city-daa-portfolio/)  
-2. Or clone it and run locally:  
-
-```bash
-git clone https://github.com/varunterdal/smart-city-daa-portfolio.git
-cd smart-city-daa-portfolio
-open index.html
