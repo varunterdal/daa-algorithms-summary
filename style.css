@@ -3,15 +3,16 @@
 
 /* --- CSS Custom Properties (Theme Variables) --- */
 :root {
-    --bg-color: #1a1a2e;
-    --primary-color: #16213e;
-    --secondary-color: #0f3460;
-    --accent-color: #e94560;
-    --font-color: #e0e0e0;
-    --glow-color: rgba(233, 69, 96, 0.6);
-    --glass-bg: rgba(22, 33, 62, 0.5);
-    --border-radius: 12px;
-    --transition-speed: 0.3s;
+    --bg-color: #0d1117; /* GitHub Dark Mode Background */
+    --primary-color: #161b22; /* Slightly Lighter Background */
+    --border-color: #30363d;
+    --accent-color: #58a6ff; /* GitHub Blue for accents */
+    --font-color: #c9d1d9; /* Lighter text for readability */
+    --font-color-secondary: #8b949e; /* Dimmer text */
+    --glow-color: rgba(88, 166, 255, 0.4);
+    --glass-bg: rgba(22, 27, 34, 0.6);
+    --border-radius: 10px;
+    --transition-speed: 0.4s;
 }
 
 /* --- General & Reset Styles --- */
@@ -23,7 +24,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, var(--bg-color), var(--primary-color));
+    background-color: var(--bg-color);
     color: var(--font-color);
     line-height: 1.7;
     padding: 25px;
@@ -33,28 +34,24 @@ body {
 /* --- Header Styles --- */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     margin-bottom: 40px;
     border-radius: var(--border-radius);
-    background: linear-gradient(-45deg, var(--secondary-color), var(--primary-color), var(--bg-color), var(--accent-color));
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
 }
 
 header h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     color: #fff;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin-top: 10px;
-    opacity: 0.8;
+    color: var(--font-color-secondary);
 }
 
 /* --- Section & Glassmorphism Effect --- */
@@ -62,70 +59,68 @@ section {
     background: var(--glass-bg);
     padding: 30px;
     border-radius: var(--border-radius);
-    margin-bottom: 30px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
     animation: slideInUp 0.6s ease-out;
 }
 
 section h3 {
     color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--accent-color);
-    display: inline-block;
-    padding-bottom: 5px;
 }
 
-/* --- Upgraded Button Styles --- */
-button {
-    background: linear-gradient(45deg, var(--accent-color), #ff7e5f);
-    color: #fff;
-    border: none;
-    padding: 15px 35px;
-    margin: 10px 0 20px 0;
-    display: inline-block;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 50px;
+/* --- Upgraded Accordion Button Styles --- */
+.accordion {
+    background-color: transparent;
+    color: var(--font-color);
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all var(--transition-speed) ease;
+    padding: 18px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
-    position: relative;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color var(--transition-speed) ease;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-button:after {
+.accordion:hover, .accordion.active {
+    background-color: var(--primary-color);
+}
+
+.accordion:after {
     content: '+';
     font-size: 2rem;
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform var(--transition-speed) ease;
+    color: var(--font-color-secondary);
+    font-weight: 300;
+    transition: transform var(--transition-speed) ease-in-out;
 }
 
-button.active:after {
-    transform: translateY(-50%) rotate(45deg);
+.accordion.active:after {
+    transform: rotate(45deg);
+    color: var(--accent-color);
 }
 
-
-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--glow-color);
-}
-
-/* --- Animated Content Toggle --- */
-.content {
+/* --- Animated Panel (Content) --- */
+.panel {
+    padding: 0 18px;
+    background-color: transparent;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    padding: 0 10px;
+    transition: max-height var(--transition-speed) ease-in-out, padding var(--transition-speed) ease-in-out;
+}
+
+.panel p, .panel ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -140,32 +135,28 @@ li {
 }
 
 li::before {
-    content: '✓';
+    content: '•';
     color: var(--accent-color);
     font-weight: bold;
+    font-size: 1.5rem;
     position: absolute;
     left: 0;
+    top: -4px;
 }
 
 /* --- Footer Styles --- */
 footer {
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--font-color-secondary);
     padding: 20px;
     margin-top: 40px;
 }
 
 /* --- Keyframe Animations --- */
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 @keyframes slideInUp {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -176,8 +167,6 @@ footer {
 /* --- Responsive Design --- */
 @media screen and (max-width: 768px) {
     body { padding: 15px; }
-    header h1 { font-size: 2.5rem; }
-    header h2 { font-size: 1.2rem; }
-    section h3 { font-size: 1.6rem; }
-    button { font-size: 1rem; padding: 12px 25px; }
+    header h1 { font-size: 2.2rem; }
+    .accordion { font-size: 1.1rem; }
 }
