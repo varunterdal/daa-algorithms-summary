@@ -136,10 +136,20 @@
     </footer>
 
     <script>
-        function toggleContent(id) {
-            const content = document.getElementById(id);
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        const button = content.previousElementSibling; // Gets the button right before the content div
+
+        button.classList.toggle('active');
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.padding = "0 10px";
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.padding = "20px 10px";
+        } 
+    }
+</script>
 </body>
 </html>
