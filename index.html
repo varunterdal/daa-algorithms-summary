@@ -23,10 +23,13 @@
                 <h3>Student Information</h3>
                 <ul>
                     <li><strong>Name:</strong> Varun S Terdal</li>
+                    <li><strong>Roll.no:</strong> 131</li>
                     <li><strong>SRN:</strong> 01FE23BCI068</li>
                     <li><strong>Course Name:</strong> Design And Analysis Of Algorithms</li>
+                    <li><strong>Course Code:</strong> 24ECAC203</li>
                     <li><strong>Course Instructor:</strong> K.M.M.Rajashekharaiah</li>
                     <li><strong>University:</strong> KLE Technological University</li>
+                    <li><strong>Portfolio Topic/Domain:</strong> DAA Course Project</li>
                 </ul>
             </section>
 
@@ -37,17 +40,14 @@
                 </button>
                 <div class="panel">
                     <div class="panel-content">
-                        <div class="truncatable-content">
-                             <p>The "Design and Analysis of Algorithms" course focuses on developing the ability to create algorithms that can efficiently solve a wide range of computational problems. It introduces fundamental principles and techniques that enable students to analyze and optimize the performance of algorithms. Key areas include the analysis of time and space complexity, designing efficient algorithms, and understanding the theoretical foundations of computing. This course also covers important algorithmic paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and graph algorithms, preparing students to solve real-world computational challenges.</p>
-                        </div>
-                        <button class="read-more-btn">Read More</button>
+                        <p>The "Design and Analysis of Algorithms" course focuses on developing the ability to create algorithms that can efficiently solve a wide range of computational problems. It introduces fundamental principles and techniques that enable students to analyze and optimize the performance of algorithms. Key areas include the analysis of time and space complexity, designing efficient algorithms, and understanding the theoretical foundations of computing. This course also covers important algorithmic paradigms such as divide-and-conquer, dynamic programming, greedy algorithms, and graph algorithms, preparing students to solve real-world computational challenges.</p>
                     </div>
                 </div>
             </section>
             
             <section class="accordion-section">
                 <button class="accordion">
-                    <span class="accordion-title">Data Structures and Algorithms Studied</span>
+                    <span class="accordion-title">What Kind of Data Structures and Algorithms Have You Studied?</span>
                     <div class="accordion-icon"></div>
                 </button>
                 <div class="panel">
@@ -100,7 +100,7 @@
 
             <section class="accordion-section">
                 <button class="accordion">
-                    <span class="accordion-title">Connecting the Course with Real-Time Applications</span>
+                    <span class="accordion-title">How Do You Connect the Course with Real-Time Applications?</span>
                     <div class="accordion-icon"></div>
                 </button>
                 <div class="panel">
@@ -198,30 +198,6 @@
                     }
                 });
             });
-            
-            // "Read More" Functionality
-            const readMoreBtn = document.querySelector('.read-more-btn');
-            const truncatableContent = document.querySelector('.truncatable-content');
-
-            if (readMoreBtn && truncatableContent) {
-                 readMoreBtn.addEventListener('click', function() {
-                    const parentPanel = this.closest('.panel');
-                    const wasExpanded = truncatableContent.classList.contains('expanded');
-                    
-                    // Always set maxHeight to null before recalculating to get collapsed height
-                    parentPanel.style.maxHeight = null; 
-                    truncatableContent.classList.toggle('expanded');
-
-                    if (!wasExpanded) {
-                        this.textContent = 'Read Less';
-                    } else {
-                        this.textContent = 'Read More';
-                    }
-
-                    // Recalculate and set the new maxHeight
-                    parentPanel.style.maxHeight = parentPanel.scrollHeight + 'px';
-                });
-            }
         });
     </script>
 
