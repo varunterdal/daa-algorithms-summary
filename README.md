@@ -35,3 +35,14 @@ I built this entire portfolio **from scratch** using:
 
 ## 📂 Project Structure
 
+---
+
+## 🚀 How to Explore It Locally
+
+Want to see it for yourself? It’s super easy:
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/varunterdal/design-and-analysis-of-algorithms-summary.git
+cd design-and-analysis-of-algorithms-summary
+
