@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(145deg, #101010, #1a1a1a);
-    color: #eaeaea;
+    background: linear-gradient(145deg, #0b0f2a, #1a2245); /* Premium dark blue gradient */
+    color: #ffffff; /* White text for contrast */
     line-height: 1.6;
     padding: 20px;
     transition: background 0.5s ease, color 0.5s ease;
@@ -20,7 +20,7 @@ body {
    Header Styles
 ========================== */
 header {
-    background: rgba(30, 30, 30, 0.85);
+    background: rgba(15, 20, 45, 0.85); /* Semi-transparent dark blue */
     padding: 60px 20px;
     text-align: center;
     border-radius: 20px;
@@ -28,14 +28,14 @@ header {
     backdrop-filter: blur(15px);
     margin-bottom: 50px;
     animation: fadeInDown 1s ease-in-out;
-    border: 1px solid rgba(255, 193, 7, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
 }
 
 header h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #f39c12; /* Porsche-inspired golden accent */
-    text-shadow: 1px 1px 8px rgba(255, 193, 7, 0.4);
+    color: #4fc3f7; /* Bright blue accent */
+    text-shadow: 1px 1px 8px rgba(79, 195, 247, 0.4);
 }
 
 header h2 {
@@ -49,8 +49,8 @@ header h2 {
    Button Styles
 ========================== */
 button {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
-    color: #fff;
+    background: linear-gradient(135deg, #4fc3f7, #0288d1); /* Gradient blue button */
+    color: #ffffff;
     border: none;
     padding: 16px 40px;
     margin: 25px auto;
@@ -59,38 +59,38 @@ button {
     font-weight: 600;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 8px 20px rgba(79, 195, 247, 0.3);
     transition: all 0.3s ease;
 }
 
 button:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 12px 30px rgba(255, 193, 7, 0.5);
-    background: linear-gradient(135deg, #ffb700, #ff8f00);
+    box-shadow: 0 12px 30px rgba(79, 195, 247, 0.5);
+    background: linear-gradient(135deg, #81d4fa, #03a9f4);
 }
 
 /* ==========================
    Section Styles
 ========================== */
 section {
-    background: rgba(25, 25, 25, 0.8);
+    background: rgba(10, 20, 50, 0.8); /* Dark-blue glassmorphism */
     padding: 35px 30px;
     border-radius: 20px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
     margin-bottom: 40px;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 193, 7, 0.15);
+    border: 1px solid rgba(79, 195, 247, 0.15); /* subtle blue border */
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 193, 7, 0.3);
+    border: 1px solid rgba(79, 195, 247, 0.3);
 }
 
 section h3 {
-    color: #f39c12;
+    color: #4fc3f7; /* Blue accent */
     font-size: 2rem;
     margin-bottom: 15px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -112,12 +112,12 @@ ul {
 
 li {
     margin-bottom: 12px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 li:hover {
     transform: translateX(3px);
-    color: #ffb700;
+    color: #81d4fa; /* Hover highlight */
 }
 
 /* ==========================
@@ -125,14 +125,14 @@ li:hover {
 ========================== */
 footer {
     text-align: center;
-    color: #7f8c8d;
+    color: #b0bec5; /* light gray */
     padding: 25px 15px;
     margin-top: 50px;
-    background: rgba(25, 25, 25, 0.85);
+    background: rgba(10, 20, 50, 0.85); /* dark-blue glass footer */
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(79, 195, 247, 0.1);
     font-size: 0.95rem;
 }
 
