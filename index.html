@@ -135,21 +135,40 @@
         <p>&copy; 2025 Design and Analysis of Algorithms - Learning Portfolio - Varun</p>
     </footer>
 
-    <script>
-    function toggleContent(id) {
-        const content = document.getElementById(id);
-        const button = content.previousElementSibling; // Gets the button right before the content div
+   <script>
+    const accordions = document.querySelectorAll('.accordion');
 
-        button.classList.toggle('active');
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function () {
+            const panel = this.nextElementSibling;
+            const isActive = this.classList.contains('active');
 
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            content.style.padding = "0 10px";
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.padding = "20px 10px";
-        } 
-    }
+            // Close all other accordions first
+            accordions.forEach(otherAccordion => {
+                if (otherAccordion !== this) {
+                    otherAccordion.classList.remove('active');
+                    otherAccordion.nextElementSibling.style.maxHeight = null;
+                    otherAccordion.nextElementSibling.style.paddingTop = null;
+                    otherAccordion.nextElementSibling.style.paddingBottom = null;
+                }
+            });
+
+            // Toggle the clicked accordion
+            if (isActive) {
+                // If it was already active, just close it
+                this.classList.remove('active');
+                panel.style.maxHeight = null;
+                panel.style.paddingTop = null;
+                panel.style.paddingBottom = null;
+            } else {
+                // If it was closed, open it
+                this.classList.add('active');
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.paddingTop = "15px";
+                panel.style.paddingBottom = "15px";
+            }
+        });
+    });
 </script>
 </body>
 </html>
